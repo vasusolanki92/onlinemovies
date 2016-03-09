@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CFEFAA9-9189-4BFA-A528-167CA4F1C046}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>online_movie_booking</RootNamespace>
+    <AssemblyName>online movie booking</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="about.html" />
+    <Content Include="Admin_insertmovie.aspx" />
+    <Content Include="AllMovies.aspx" />
+    <Content Include="AllMovies2.aspx" />
+    <Content Include="App_Data\online_movie.mdf" />
+    <Content Include="App_Data\online_movie_log.ldf">
+      <DependentUpon>online_movie.mdf</DependentUpon>
+    </Content>
+    <Content Include="Book Movie.aspx" />
+    <Content Include="Buy.aspx" />
+    <Content Include="Change Password.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="css1\style.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tsc_tabs.css" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images1\check-icon.png" />
+    <Content Include="images1\spirit.png" />
+    <Content Include="images\banner-no.png" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\but.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\dribble.png" />
+    <Content Include="images\f-icon.png" />
+    <Content Include="images\fb.png" />
+    <Content Include="images\hd-bg.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\large-button-overlay.png" />
+    <Content Include="images\line.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\p-but.png" />
+    <Content Include="images\pic.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\pic10.jpg" />
+    <Content Include="images\pic11.jpg" />
+    <Content Include="images\pic12.jpg" />
+    <Content Include="images\pic13.jpg" />
+    <Content Include="images\pic14.jpg" />
+    <Content Include="images\pic15.jpg" />
+    <Content Include="images\pic16.jpg" />
+    <Content Include="images\pic17.jpg" />
+    <Content Include="images\pic18.jpg" />
+    <Content Include="images\pic19.jpg" />
+    <Content Include="images\pic2.jpg" />
+    <Content Include="images\pic20.jpg" />
+    <Content Include="images\pic21.jpg" />
+    <Content Include="images\pic22.jpg" />
+    <Content Include="images\pic23.jpg" />
+    <Content Include="images\pic24.jpg" />
+    <Content Include="images\pic25.jpg" />
+    <Content Include="images\pic3.jpg" />
+    <Content Include="images\pic4.jpg" />
+    <Content Include="images\pic5.jpg" />
+    <Content Include="images\pic6.jpg" />
+    <Content Include="images\pic7.jpg" />
+    <Content Include="images\pic8.jpg" />
+    <Content Include="images\pic9.jpg" />
+    <Content Include="images\pinterest.png" />
+    <Content Include="images\s-icon.png" />
+    <Content Include="images\t-pic18.jpg" />
+    <Content Include="images\t-pic19.jpg" />
+    <Content Include="images\t-pic20.jpg" />
+    <Content Include="images\t-pic21.jpg" />
+    <Content Include="images\t-pic22.jpg" />
+    <Content Include="images\t-pic23.jpg" />
+    <Content Include="images\t-pic24.jpg" />
+    <Content Include="images\t-pic25.jpg" />
+    <Content Include="images\tw.png" />
+    <Content Include="index.html" />
+    <Content Include="js\example.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery.color-RGBa-patch.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="logindex.html" />
+    <Content Include="movies_events.html" />
+    <Content Include="ShowMovie.aspx" />
+    <Content Include="ShowMovies2.aspx" />
+    <Content Include="User_Manage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_insertmovie.aspx.cs">
+      <DependentUpon>Admin_insertmovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_insertmovie.aspx.designer.cs">
+      <DependentUpon>Admin_insertmovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllMovies.aspx.cs">
+      <DependentUpon>AllMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllMovies.aspx.designer.cs">
+      <DependentUpon>AllMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllMovies2.aspx.cs">
+      <DependentUpon>AllMovies2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllMovies2.aspx.designer.cs">
+      <DependentUpon>AllMovies2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BAL.cs" />
+    <Compile Include="Book Movie.aspx.cs">
+      <DependentUpon>Book Movie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book Movie.aspx.designer.cs">
+      <DependentUpon>Book Movie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.aspx.cs">
+      <DependentUpon>Change Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Change Password.aspx.designer.cs">
+      <DependentUpon>Change Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.cs" />
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master2.Master.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master2.Master.designer.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowMovie.aspx.cs">
+      <DependentUpon>ShowMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowMovie.aspx.designer.cs">
+      <DependentUpon>ShowMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMovies2.aspx.cs">
+      <DependentUpon>ShowMovies2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowMovies2.aspx.designer.cs">
+      <DependentUpon>ShowMovies2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Manage.aspx.cs">
+      <DependentUpon>User_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Manage.aspx.designer.cs">
+      <DependentUpon>User_Manage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\Amble-Light-webfont.ttf" />
+    <Content Include="images\banner-no.psd" />
+    <Content Include="images\banner_no.psd" />
+    <Content Include="images\fb-ico.psd" />
+    <Content Include="images\h-but.psd" />
+    <Content Include="images\icon.psd" />
+    <Content Include="images\logo.psd" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="Master.Master" />
+    <Content Include="images1\Thumbs.db" />
+    <Content Include="Master2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js1\" />
+    <Folder Include="photos\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49574</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49574/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

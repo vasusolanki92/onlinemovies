@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master2.master.cs" Inherits="online_movie_booking.Master2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Free Theater Website Template | Home :: w3layouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/modernizr.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
+<script src='js/jquery.color-RGBa-patch.js'></script>
+<script src='js/example.js'></script>
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  <!-- DC Tabs CSS -->
+<link type="text/css" rel="stylesheet" href="http://www.dreamtemplate.com/dreamcodes/tabs/css/tsc_tabs.css" />
+ <!-- jQuery Library (skip this step if already called on page ) -->
+<script type="text/javascript" src="http://www.dreamtemplate.com/dreamcodes/jquery.min.js"></script> <!-- (do not call twice) -->
+ <!-- DC Tabs JS -->
+<!--<script type="text/javascript" src="http://www.dreamtemplate.com/dreamcodes/tabs/js/tsc_tabs.js"></script>-->
+<link rel="stylesheet" href="css/tsc_tabs.css" type="text/css" media="all" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+	<div class="header-top">
+		<div class="wrap">
+			<div class="banner-no">
+		  		<img src="images/banner-no.png" alt=""/>
+		    </div>
+			  <div class="nav-wrap">
+					<ul class="group" id="example-one">
+			         
+			           <li><a href="Change Password.aspx">Change Password</a></li>
+			  		   
+                        <li><asp:Label  ID="label1" runat="server" ForeColor="White" /></li>
+                        <li>
+                            <asp:LinkButton Text="Logout" ID="lnkb" runat="server" OnClick="lnkb_Click" /> </li>
+			        </ul>
+			  </div>
+ 			<div class="clear"></div>
+   		</div>
+    </div>
+<div class="block">
+	<div class="wrap">
+		<div class="h-logo">
+			<a href="AllMovies2.aspx"><img src="images/logo.png" alt=""/></a>
+		</div>
+        <div action="#" id="reservation-form">
+		       <fieldset>
+		                <div class="field">
+			                 <label>&nbsp;Movie-Wood</label>
+                            <asp:DropDownList ID="DropDownList1" AutoPostBack="true" runat="server" Width="127px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" >
+                                
+                             </asp:DropDownList>
+
+			            </div>
+
+                     
+		                <div class="field1">
+			                 <label>&nbsp;Movie type</label>
+                            <asp:DropDownList ID="DropDownList2" AutoPostBack="true" runat="server" Width="124px" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" ></asp:DropDownList>
+		                </div>
+                   
+		                <div class="field1">
+			                 <label>&nbsp;Movies</label>
+                            <asp:DropDownList ID="DropDownList3" runat="server" Width="124px" ></asp:DropDownList>
+		                </div>
+
+                   <div class ="field1">
+                       <label>&nbsp;</label>
+                       <asp:Button ID="Button1" runat="server" Text="Search" Width="100px" BorderColor="#FFCC00" Height="28px" OnClick="Button1_Click"  />
+                   </div>
+		       </fieldset>
+            </div>
+            <div class="clear"></div>
+   </div>
+</div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+	<div class="wrap">
+			<div class="footer-top">
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="footer-nav">
+		                <ul>
+		                   <li><a href="">Our Tips of gallery Template diam</a></li>
+		                    <li><a href="">Our Tips of gallery Template diam</a></li>
+		                     <li><a href="">Our Tips of gallery Template diam</a></li>
+		                       <li><a href="">Our Tips of gallery Template diam</a></li>
+		                   </ul>
+		              </div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="textcontact">
+						<p>consectetuer adipiscing elit,<br>
+						consectetuer<br>
+						Ph: +1-800-234-52589.<br>
+						Email:Support(at)Fotoria-scope.com<br>
+						</p>
+					</div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="call_info">
+						<p class="txt_3">Call us toll free:</p>
+						<p class="txt_4">1 800 234 23456</p>
+					</div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class=social>
+						<a href="#"><img src="images/fb.png" alt=""/></a>
+						<a href="#"><img src="images/tw.png" alt=""/></a>
+						<a href="#"><img src="images/dribble.png" alt=""/></a>
+						<a href="#"><img src="images/pinterest.png" alt=""/></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+	<div class="wrap">
+	<div class="copy">
+		<p>All rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+	</div>
+ 	</div>
+</div>
+    </div>
+    </form>
+</body>
+</html>
